@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社 コスモエクステリア 公式Webサイト</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+<!-- JQueryで読み込み -->
+
+<header>
+    <div class="inner">
+        <div class="flexbox">
+            <h1>コスモエクステリア</h1>
+        </div>
+        <div class="nav_global">
+            <ul class="flexbox">
+                <li><a href="#work"  id="work_link_js" class="link">施工事例</a></li>
+                <li><a href="#process"  id="process_link_js" class="link">施工手順</a></li>
+                <li><a href="#news"  id="news_link_js" class="link">最新情報</a></li>
+                <li><a href="#contact" id="contact_link_js" class="link">お問い合わせ</a></li>
+            </ul>
+        </div>
+
+    <!-- ハンバーガーメニュー -->
+    <div class="nav_btn">
+        <input type="checkbox" id="menuToggle">
+        <label for="menuToggle" class="hamburger">
+            <div class="open"></div>
+        </label>
+        <div class="menu menuEffects">
+            <label for="menuToggle"></label>
+        <div class="menucont">
+            <ul>
+                <li><a href="#work" onclick="$('input').prop('checked', false)">施工事例</a></li>
+                <li><a href="#process" onclick="$('input').prop('checked', false)">施工手順</a></li>
+                <li><a href="#news" onclick="$('input').prop('checked', false)">最新情報</a></li>
+                <li><a href="#contact" onclick="$('input').prop('checked', false)">お問い合わせ</a></li>
+            </ul>
+            <p>お電話でのお問い合わせ<br>
+                0120-71-7911</p>
+        </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+<div class="all_container">
+    <div class="hero">
+        <div class="hero_img">創業30年 地域密着型のエクステリア量販工事店です</div>
+    </div>
+
+    <div class="corona">
+        <a href="#">【重要】新型コロナウイルスの感染対策について</a>
+    </div>
+
+    <section class="position-now" id="work">
+        <h2>施工事例</h2>
+        <div class="content">
+            <div class="work_con">
+                <a class="modal-syncer button-link" data-target="modal-content-01">
+                <figure><figcaption><img src="img/work_01.jpg" alt="ウッドデッキの施工"></figcaption>
+                <p>ウッドデッキの施工</p></figure></a>
+            </div>
+            <div class="work_con">
+                <a class="modal-syncer button-link" data-target="modal-content-01">
+                <figure><figcaption><img src="img/work_02.jpg" alt="目隠しフェンスの施工"></figcaption>
+                <p>目隠しフェンスの施工</p></figure></a>
+            </div>
+            <div class="work_con">
+                <a class="modal-syncer button-link" data-target="modal-content-01">
+                <figure><figcaption><img src="img/work_03.jpg" alt="サンルームの施工"></figcaption>
+                <p>サンルームの施工</p></figure></a>
+            </div>
+            <div class="work_con">
+                <a class="modal-syncer button-link" data-target="modal-content-01">
+                <figure><figcaption><img src="img/work_04.jpg" alt="人工竹垣の施工"></figcaption>
+                <p>人工竹垣の施工</p></figure></a>
+            </div>
+
+            <div class="column_01">
+                <h3>取り扱いメーカー</h3>
+                <p>リクシル（リフォームネット特約店、グッドリビング友の会会員）<br>
+                    文化シャッター　三協アルミ　YKK　四国化成<br>
+                    パナソニック　イナバ製作所　グローベン　タカショー<br>
+                    F＆F（人工木フエンス）　エスビック　日興エクステリア　<br>
+                    マチダコーポレーション</p>
+            </div>
+            
+            <div class="column_02">
+                <h3>取り扱い商品</h3>
+                <p>人工木デッキ（リクシル樹ら楽ステージ）<br>
+                    ガーデンルーム（リクシル団蘭物語他）<br>
+                    目隠しフエンスF＆F（人工木フエンス）　<br>
+                    人工竹垣（グローベン)<br>
+                    カーポートアルミテラス（２Fに取付）<br>
+                    アコーデオン（ノンキャスター等）タイル工事<br>
+                    塗装工事（日本ペイント使用)<br>
+                    電動シャッター（文化シャッター）庭の雑草対策</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-now" id="process">
+        <h2>施工手順</h2>
+        <div class="content">
+        <ul>
+            <li>見積依頼</li>
+            <img src="img/arrow.svg" alt="">
+            <li>現場打ち合わせ</li>
+            <img src="img/arrow.svg" alt="">
+            <li>見積書提出</li>
+            <img src="img/arrow.svg" alt="">
+            <li>ご契約</li>
+            <img src="img/arrow.svg" alt="">
+            <li>施工</li>
+            <img src="img/arrow.svg" alt="">
+            <li>完了の報告</li>
+        </ul>
+        <div class="qa">
+            <a href="#" class="btn">よくあるお問い合わせ</a>
+        </div>
+        </div>
+    </section>
+
+    <section class="position-now" id="news">
+        <h2>最新情報</h2>
+        <div class="content">
+        Googleスライドが入る
+        </div>
+    </section>
+
+    <section class="position-now" id="contact">
+        <h2>お問い合わせ</h2>
+        <div class="content">
+        <p>お見積もり、ご相談無料で承ります<br>
+            営業、勧誘は一切いたしません<br>
+            どなたでもお気軽にご相談下さい</p>
+        <div class="column_01">
+            <h3>お電話でのお問い合わせ</h3>
+            <h4>0120-71-7911</h4>
+            <p>受付時間/8:30-18:00</p>
+        </div>
+        <div class="column_02">
+            <h3>FAXでのお問い合わせ</h3>
+            <h4>045-904-5321</h4>
+        </div>
+        <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeM2X9o3VUG4d-aWcrpHFH8hiGaW86VlBD-jG2PVgFHL0IETg/formResponse" target="_self" method="POST" id="mG61Hd">
+            <dl>
+                <dt>お名前</dt>
+                <dd><input name="entry.1826431607" type="text" required="required" id="textfield" class="g_form" placeholder="Name"></dd>
+                <dt><label for="textfield2">メールアドレス</label></dt>
+                <dd><input name="entry.477463285" type="text" required="required" class="g_form" id="textfield1" placeholder="Email"></dd>
+                <dt>電話番号</dt>
+                <dd><input name="entry.526476052" type="text" required="required" class="g_form" id="textfield2" placeholder="TEL"></dd>
+                <dt><label for="textfield2">件名</label></dt>
+                <dd><input name="entry.2112935214" type="text" required="required" class="g_form" id="textfield3" placeholder="Title"></dd>
+                <dt>ご依頼内容</dt>
+                <dd><textarea name="entry.1058165167" required class="g_form_text" id="entry.1276685215" placeholder="Message"></textarea></dd>
+                <dt>送信</dt>
+                <dd><input type="submit" class="btbt" value="送信"></dd>
+            </dl>
+        </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="column">
+            <h5>株式会社　コスモエクステリア</h5>
+            <dl>
+                <dt>代表者</dt>
+                <dd>代表取締役　山本 亘</dd>
+                <dt>事業内容</dt>
+                <dd>外構工事全般<br>
+                    （門まわり、塀、庭、駐車場等の新築・リフォーム工事）</dd>
+                <dt>資格</dt>
+                <dd>国土交通大臣認定 サンルーム施工技師認定店<br>
+                    厚生労働大臣認定 バルコニー施工技師認定店</dd>
+                <dt>創業日</dt>
+                <dd>平成1年6月29日</dd>
+                <dt>資本金</dt>
+                <dd>1000万円</dd>
+            </dl>
+        </div>
+        <div class="column">
+            <p>〒225-0001<br>
+                神奈川県横浜市青葉区美しが丘西2-26-42</p>
+        </div>
+        <p>©︎Cosumo Exterior 2020 </p>
+    </footer>
+</div>
+</body>
+</html>
