@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-<!-- JQueryで読み込み -->
+    <!-- JQueryで読み込み -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/modal-fixed.js"></script>
+    <script src="js/modal-multi.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/current.js"></script>
 
 <header>
     <div class="inner">
@@ -22,6 +27,10 @@
                 <li><a href="#news"  id="news_link_js" class="link">最新情報</a></li>
                 <li><a href="#contact" id="contact_link_js" class="link">お問い合わせ</a></li>
             </ul>
+            <div class="tel">
+                <p>お電話でのお問い合わせ</p>
+                <p>0120-71-7911</p>
+            </div>
         </div>
 
     <!-- ハンバーガーメニュー -->
@@ -39,8 +48,8 @@
                 <li><a href="#news" onclick="$('input').prop('checked', false)">最新情報</a></li>
                 <li><a href="#contact" onclick="$('input').prop('checked', false)">お問い合わせ</a></li>
             </ul>
-            <p>お電話でのお問い合わせ<br>
-                0120-71-7911</p>
+            <p>お電話でのお問い合わせ</p>
+            <p>0120-71-7911</p>
         </div>
         </div>
     </div>
@@ -53,36 +62,105 @@
     </div>
 
     <div class="corona">
-        <a href="#">【重要】新型コロナウイルスの感染対策について</a>
+        <a href="text/corona.pdf" target="_blank">【重要】新型コロナウイルスの感染対策について</a>
     </div>
 
-    <section class="position-now" id="work">
+<section class="position-now" id="work">
         <h2>施工事例</h2>
         <div class="content">
+
+        <!-- モーダルの中身 -->
+        <!-- ウッドデッキの施工 -->
+        <div id="modal-content-01" class="modal-content">
+            <!-- CLOSEボタン -->
+            <a class="button-link"><div class="modal-close-top">close</div></a>
+                <h3>ウッドデッキの施工</h3>
+                    <div class="contaier">
+                        <img src="img/modal1_1.jpg" alt="ウッドデッキの施工">
+                        <img src="img/modal1_2.jpg" alt="ウッドデッキの施工">
+                        <a class="button-link"><div class="modal-close-bottom">close</div></a>
+                    </div>
+            </div>
+        </div>
+
+        <!-- 目隠しフェンスの施工 -->
+        <div id="modal-content-02" class="modal-content">
+            <!-- CLOSEボタン -->
+            <a class="button-link"><div class="modal-close-top">close</div></a>
+                <h3>目隠しフェンスの施工</h3>
+                    <div class="contaier">
+                        <img src="img/modal2_1.jpg" alt="目隠しフェンスの施工">
+                        <img src="img/modal2_2.jpg" alt="目隠しフェンスの施工">
+                        <a class="button-link"><div class="modal-close-bottom">close</div></a>
+                    </div>
+            </div>
+
+        <!-- サンルームの施工 -->
+        <div id="modal-content-03" class="modal-content">
+            <!-- CLOSEボタン -->
+            <a class="button-link"><div class="modal-close-top">close</div></a>
+                <h3>サンルームの施工</h3>
+                    <div class="contaier">
+                        <img src="img/modal3_1.jpg" alt="サンルームの施工">
+                        <img src="img/modal3_2.jpg" alt="サンルームの施工">
+                        <a class="button-link"><div class="modal-close-bottom">close</div></a>
+                    </div>
+            </div>
+
+        <!-- 人工竹垣の施工 -->
+        <div id="modal-content-04" class="modal-content">
+            <!-- CLOSEボタン -->
+            <a class="button-link"><div class="modal-close-top">close</div></a>
+                <h3>人工竹垣の施工</h3>
+                    <div class="contaier">
+                        <img src="img/modal4_1.jpg" alt="人工竹垣の施工">
+                        <img src="img/modal4_2.jpg" alt="人工竹垣の施工">
+                        <a class="button-link"><div class="modal-close-bottom">close</div></a>
+                    </div>
+            </div>
+
+            <!-- よくあるお問い合わせ -->
+            <div id="modal-content-05" class="modal-content">
+                <!-- CLOSEボタン -->
+                <a class="button-link"><div class="modal-close-top">close</div></a>
+                    <h3>よくあるお問い合わせ</h3>
+                        <div class="contaier">
+                            <img src="img/modal4_1.jpg" alt="人工竹垣の施工">
+                            <img src="img/modal4_2.jpg" alt="人工竹垣の施工">
+                            <a class="button-link"><div class="modal-close-bottom">close</div></a>
+                        </div>
+                </div>
+        
+        <div class="flex">
             <div class="work_con">
+                <span></span>
                 <a class="modal-syncer button-link" data-target="modal-content-01">
-                <figure><figcaption><img src="img/work_01.jpg" alt="ウッドデッキの施工"></figcaption>
+                <figure><figcaption></figcaption><img src="img/work_01.jpg" alt="ウッドデッキの施工"></figcaption>
                 <p>ウッドデッキの施工</p></figure></a>
             </div>
             <div class="work_con">
-                <a class="modal-syncer button-link" data-target="modal-content-01">
+                <span></span>
+                <a class="modal-syncer button-link" data-target="modal-content-02">
                 <figure><figcaption><img src="img/work_02.jpg" alt="目隠しフェンスの施工"></figcaption>
                 <p>目隠しフェンスの施工</p></figure></a>
             </div>
             <div class="work_con">
-                <a class="modal-syncer button-link" data-target="modal-content-01">
+                <a class="modal-syncer button-link" data-target="modal-content-03">
                 <figure><figcaption><img src="img/work_03.jpg" alt="サンルームの施工"></figcaption>
                 <p>サンルームの施工</p></figure></a>
             </div>
             <div class="work_con">
-                <a class="modal-syncer button-link" data-target="modal-content-01">
+                <a class="modal-syncer button-link" data-target="modal-content-04">
                 <figure><figcaption><img src="img/work_04.jpg" alt="人工竹垣の施工"></figcaption>
                 <p>人工竹垣の施工</p></figure></a>
             </div>
+        </div>
 
+        <div class="column_flex">
             <div class="column_01">
                 <h3>取り扱いメーカー</h3>
-                <p>リクシル（リフォームネット特約店、グッドリビング友の会会員）<br>
+                <p>リクシル<br>
+                    （リフォームネット特約店、グッドリビング友の会会員）<br>
                     文化シャッター　三協アルミ　YKK　四国化成<br>
                     パナソニック　イナバ製作所　グローベン　タカショー<br>
                     F＆F（人工木フエンス）　エスビック　日興エクステリア　<br>
@@ -100,6 +178,7 @@
                     塗装工事（日本ペイント使用)<br>
                     電動シャッター（文化シャッター）庭の雑草対策</p>
             </div>
+        </div>
         </div>
     </section>
 
@@ -120,7 +199,8 @@
             <li>完了の報告</li>
         </ul>
         <div class="qa">
-            <a href="#" class="btn">よくあるお問い合わせ</a>
+            <a class="modal-syncer button-link" data-target="modal-content-05">
+            <div class="btn">よくあるお問い合わせ</div>
         </div>
         </div>
     </section>
@@ -128,11 +208,11 @@
     <section class="position-now" id="news">
         <h2>最新情報</h2>
         <div class="content">
-        Googleスライドが入る
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVYA5EaZFkfX2QzYQ7CRaPh4nxceRzLG1DTOM28mLoliVV6QGFPkFOe3rpzT6IrHsDmkvECvLMUr-6/embed?start=false&loop=true&delayms=5000" frameborder="0" width="1440" height="1109" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         </div>
     </section>
 
-    <section class="position-now" id="contact">
+<section class="position-now" id="contact">
         <h2>お問い合わせ</h2>
         <div class="content">
         <p>お見積もり、ご相談無料で承ります<br>
@@ -184,7 +264,8 @@
                 <dd>1000万円</dd>
             </dl>
         </div>
-        <div class="column">
+        <div class="column_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.511139841667!2d139.52676901541778!3d35.59045618021555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f7554c9d2f3b%3A0x4ec57be57a142263!2z44CSMjI1LTAwMDEg56We5aWI5bed55yM5qiq5rWc5biC6Z2S6JGJ5Yy6576O44GX44GM5LiY6KW_77yS5LiB55uu77yS77yW4oiS77yU77yS!5e0!3m2!1sja!2sjp!4v1593155648640!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <p>〒225-0001<br>
                 神奈川県横浜市青葉区美しが丘西2-26-42</p>
         </div>
