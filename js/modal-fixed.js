@@ -1,16 +1,11 @@
-$(function(){
-	var modal = $('#modal'),
-		  modalContent = $('#modal-content'),
-		  btnOpen = $("#btn_open"),
-		  btnClose = $(".btn_close");
-   
-	$(btnOpen).on('click', function() {
-	  modal.show();
+$(function() {
+	$('.modal-syncer').click(function() {
+		$('body').addClass('fixed');//背景固定
+		return false;//<a>を無効化
 	});
-   
-	$(modal).on('click', function(event) {
-	  if(!($(event.target).closest(modalContent).length)||($(event.target).closest(btnClose).length)){
-		modal.hide();
-	  }
+
+	$('.button-link').on('click.close-model',function() {
+		$('body').removeClass('fixed');//背景固定を解除
+		return false;//<a>を無効化
 	});
   });
