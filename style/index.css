@@ -332,37 +332,6 @@
   border-bottom: 1px solid #999;
 }
 
-#work #modal-content-06 h3 {
-  font-size: 1.5rem;
-  margin: 1rem 3rem;
-}
-
-#work dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 28em;
-  margin: 0 auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  font-size: 1.1rem;
-}
-
-#work dt {
-  width: 10%;
-}
-
-#work dd {
-  width: 90%;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
-  padding-bottom: 10px;
-  text-align: left;
-}
-
 #process h2 {
   background-image: url(../img/h2_02.svg);
   background-repeat: no-repeat;
