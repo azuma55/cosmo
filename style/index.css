@@ -192,6 +192,7 @@
 }
 
 #work .modal-content {
+  display: none;
   color: #000;
   background: #fff;
   position: fixed;
@@ -418,6 +419,7 @@
 }
 
 #process .modal-content {
+  display: none;
   color: #000;
   background: #fff;
   position: fixed;
