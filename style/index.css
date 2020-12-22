@@ -1,4 +1,103 @@
 @charset "UTF-8";
+#corona {
+  padding: 1.3rem;
+  margin: 5rem 3rem;
+  text-align: center;
+  border: solid 2px #FF0000;
+}
+
+#corona a {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #999;
+}
+
+#corona .modal-content {
+  color: #000;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  max-height: calc(100vh - 1.5rem);
+  margin: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 20;
+}
+
+#corona .modal-content .button-link > .modal-close-top {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  text-indent: 100%;
+  z-index: 21;
+  background-image: url(../img/close_top.gif);
+  background-size: 2rem;
+  width: 22px;
+  height: 22px;
+  margin: 3rem 2rem 0 auto;
+}
+
+#corona .modal-content .modal-close-top:hover {
+  background-image: url(../img/close_top_hover.gif);
+}
+
+#corona .modal-content .button-link > .modal-close-bottom {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  text-indent: 100%;
+  width: 7rem;
+  height: 28px;
+  background-size: 7rem;
+  background-image: url(../img/close_bottom.gif);
+  max-width: 50%;
+  margin: 3rem auto;
+}
+
+#corona .modal-content .modal-close-bottom:hover {
+  background-image: url(../img/close_bottom_hover.svg);
+}
+
+#corona .modal-content h4 {
+  font-size: 1.3rem;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  margin: 2.5rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#corona .modal-content .contaier {
+  padding: 2rem 3rem 7rem;
+}
+
+#corona .modal-content img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#corona .modal-content p {
+  line-height: 2;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  -ms-text-justify: inter-ideograph;
+  word-break: normal;
+  word-wrap: break-word;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  padding-bottom: 2rem;
+}
+
+#corona .modal-content .modal-content p:nth-of-type(2) {
+  padding-bottom: 2rem;
+}
+
 #work h2 {
   background-image: url(../img/h2_01.svg);
   background-repeat: no-repeat;
@@ -174,7 +273,7 @@
   padding-bottom: 2rem;
 }
 
-#work #modal-content-01 h3 {
+#work #modal-content-02 h3 {
   background-image: url(../img/modal_01.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -188,7 +287,7 @@
   border-bottom: 1px solid #999;
 }
 
-#work #modal-content-02 h3 {
+#work #modal-content-03 h3 {
   background-image: url(../img/modal_02.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -202,22 +301,8 @@
   border-bottom: 1px solid #999;
 }
 
-#work #modal-content-03 h3 {
-  background-image: url(../img/modal_03.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 100%;
-  width: 22rem;
-  height: 3rem;
-  margin: 2rem auto 1rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #999;
-}
-
 #work #modal-content-04 h3 {
-  background-image: url(../img/modal_04.svg);
+  background-image: url(../img/modal_03.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   overflow: hidden;
@@ -328,6 +413,121 @@
 
 #process .btn:hover {
   background: #FDB731;
+}
+
+#process .modal-content {
+  color: #000;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  max-height: calc(100vh - 1.5rem);
+  margin: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 20;
+}
+
+#process .modal-content .button-link > .modal-close-top {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  text-indent: 100%;
+  z-index: 21;
+  background-image: url(../img/close_top.gif);
+  background-size: 2rem;
+  width: 22px;
+  height: 22px;
+  margin: 3rem 2rem 0 auto;
+}
+
+#process .modal-content .modal-close-top:hover {
+  background-image: url(../img/close_top_hover.gif);
+}
+
+#process .modal-content .button-link > .modal-close-bottom {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  text-indent: 100%;
+  width: 7rem;
+  height: 28px;
+  background-size: 7rem;
+  background-image: url(../img/close_bottom.gif);
+  max-width: 50%;
+  margin: 3rem auto;
+}
+
+#process .modal-content .modal-close-bottom:hover {
+  background-image: url(../img/close_bottom_hover.svg);
+}
+
+#process .modal-content h4 {
+  font-size: 1.3rem;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  margin: 2.5rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#process .modal-content .contaier {
+  padding: 2rem 3rem 7rem;
+}
+
+#process .modal-content img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#process .modal-content p {
+  line-height: 2;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  -ms-text-justify: inter-ideograph;
+  word-break: normal;
+  word-wrap: break-word;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  padding-bottom: 2rem;
+}
+
+#process .modal-content .modal-content p:nth-of-type(2) {
+  padding-bottom: 2rem;
+}
+
+#process #modal-content-06 h3 {
+  font-size: 1.5rem;
+  margin: 1rem 3rem;
+}
+
+#process dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 28em;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1.1rem;
+}
+
+#process dt {
+  width: 10%;
+}
+
+#process dd {
+  width: 90%;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  padding-bottom: 10px;
+  text-align: left;
 }
 
 #news h2 {
@@ -865,20 +1065,6 @@ section {
   margin-bottom: 6rem;
 }
 
-.corona {
-  padding: 1.3rem;
-  margin: 5rem 3rem;
-  text-align: center;
-  border: solid 2px #FF0000;
-}
-
-.corona a {
-  margin: 0;
-  padding: 0;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #999;
-}
-
 .hero {
   position: relative;
   background-size: cover;
@@ -1120,6 +1306,9 @@ footer iframe {
     font-size: 1.8rem;
     padding: 3rem 3rem;
     width: 60rem;
+  }
+  #process .modal-content {
+    width: 50%;
   }
   footer {
     width: 100%;
