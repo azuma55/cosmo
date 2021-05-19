@@ -100,6 +100,29 @@
   padding-bottom: 2rem;
 }
 
+#campaign {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+#campaign a {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+#campaign .us {
+  width: 30rem;
+  padding-bottom: 2rem;
+}
+
+#campaign .shikoku {
+  width: 30rem;
+  padding-bottom: 2rem;
+}
+
 #work h2 {
   background-image: url(../img/h2_01.svg);
   background-repeat: no-repeat;
@@ -276,7 +299,7 @@
   padding-bottom: 2rem;
 }
 
-#work #modal-content-02 h3 {
+#work .modal-content #modal-content-02 h3 {
   background-image: url(../img/modal_01.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -290,7 +313,7 @@
   border-bottom: 1px solid #999;
 }
 
-#work #modal-content-03 h3 {
+#work .modal-content #modal-content-03 h3 {
   background-image: url(../img/modal_02.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -304,7 +327,7 @@
   border-bottom: 1px solid #999;
 }
 
-#work #modal-content-04 h3 {
+#work .modal-content #modal-content-04 h3 {
   background-image: url(../img/modal_03.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -318,7 +341,7 @@
   border-bottom: 1px solid #999;
 }
 
-#work #modal-content-05 h3 {
+#work .modal-content #modal-content-05 h3 {
   background-image: url(../img/modal_04.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -580,7 +603,11 @@
   color: #999;
 }
 
-#contact .column_02 h3 {
+#contact .column_02 {
+  margin-bottom: 12rem;
+}
+
+#contact h3 {
   background-image: url(../img/h3_04.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -594,7 +621,7 @@
   border-bottom: 1px solid #999;
 }
 
-#contact .column_02 h4 {
+#contact h4 {
   text-align: center;
   font-size: 2.7rem;
   color: #FDB731;
@@ -602,11 +629,7 @@
   letter-spacing: 0.1em;
 }
 
-#contact .column_02 p {
-  color: #999;
-}
-
-#contact dl {
+dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,13 +637,13 @@
       flex-wrap: wrap;
 }
 
-#contact dt {
+dt {
   width: 12rem;
   font-size: 1.3rem;
   padding-bottom: 0.7rem;
 }
 
-#contact dd {
+dd {
   width: 100%;
   font-size: 1.5rem;
   -webkit-margin-start: 0;
@@ -628,20 +651,20 @@
   padding-bottom: 2.3rem;
 }
 
-#contact dt:nth-of-type(6) {
+dt:nth-of-type(6) {
   padding: initial;
   text-indent: -9999px;
 }
 
-#contact dd:nth-of-type(5) {
+dd:nth-of-type(5) {
   padding: initial;
 }
 
-#contact dd:nth-of-type(6) {
+dd:nth-of-type(6) {
   width: 100%;
 }
 
-#contact .g_form {
+.g_form {
   width: 100%;
   height: 3.7rem;
   -webkit-box-sizing: border-box;
@@ -653,7 +676,7 @@
   color: #000;
 }
 
-#contact .g_form_text {
+.g_form_text {
   width: 100%;
   height: 18rem;
   -webkit-box-sizing: border-box;
@@ -666,49 +689,49 @@
   color: #000;
 }
 
-#contact .input {
+.input {
   -webkit-appearance: none;
   border-radius: 0;
 }
 
-#contact input::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   color: #5f5f5f;
 }
 
-#contact input:-ms-input-placeholder {
+input:-ms-input-placeholder {
   color: #5f5f5f;
 }
 
-#contact input::-ms-input-placeholder {
+input::-ms-input-placeholder {
   color: #5f5f5f;
 }
 
-#contact input::placeholder {
+input::placeholder {
   color: #5f5f5f;
 }
 
-#contact textarea {
+textarea {
   -webkit-appearance: none;
   border-radius: 0;
 }
 
-#contact textarea::-webkit-input-placeholder {
+textarea::-webkit-input-placeholder {
   color: #5f5f5f;
 }
 
-#contact textarea:-ms-input-placeholder {
+textarea:-ms-input-placeholder {
   color: #5f5f5f;
 }
 
-#contact textarea::-ms-input-placeholder {
+textarea::-ms-input-placeholder {
   color: #5f5f5f;
 }
 
-#contact textarea::placeholder {
+textarea::placeholder {
   color: #5f5f5f;
 }
 
-#contact .btbt {
+.btbt {
   position: relative;
   width: 100%;
   height: 5rem;
@@ -722,7 +745,7 @@
   color: #000;
 }
 
-#contact .btbt:hover {
+.btbt:hover {
   opacity: 0.7;
 }
 
@@ -945,6 +968,7 @@ body {
   color: #000;
   font-family: 'Times New Roman','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
   margin: 0;
+  overflow-y: scroll;
 }
 
 body.fixed {
@@ -1056,14 +1080,6 @@ section {
   text-indent: -9999px;
 }
 
-#contact .content p:nth-of-type(2) {
-  font-size: 1.4rem;
-}
-
-#contact .content .column_02 {
-  margin-bottom: 12rem;
-}
-
 footer {
   background-color: #989898;
   color: #fff;
@@ -1137,7 +1153,7 @@ footer iframe {
 
 @media (min-width: 749px) {
   p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   #work h2, #process h2, #news h2, #contact h2 {
     width: 20rem;
@@ -1191,7 +1207,7 @@ footer iframe {
     background-color: #fff;
   }
   .hero {
-    height: 770px;
+    height: 720px;
     top: 60px;
   }
   .hero .hero_img {
@@ -1202,6 +1218,12 @@ footer iframe {
   }
   #corona .modal-content {
     width: 50%;
+  }
+  #campaign .us {
+    padding-right: 2rem;
+  }
+  #campaign .shikoku {
+    width: 35rem;
   }
   .flex {
     display: -webkit-box;
@@ -1240,7 +1262,7 @@ footer iframe {
     width: 6%;
   }
   #work .modal-content {
-    width: 50%;
+    width: 60%;
     padding: initial;
   }
   #work #modal-content-05 .contaier {
@@ -1279,15 +1301,18 @@ footer iframe {
     margin: 7rem 0;
   }
   #process .btn {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     padding: 3rem 3rem;
     width: 60rem;
   }
   #process .modal-content {
-    width: 50%;
+    width: 60%;
   }
   footer {
     width: 100%;
+  }
+  footer dl {
+    font-size: 1.5rem;
   }
   footer .flex {
     display: -webkit-box;
